@@ -1,0 +1,19 @@
+{%extends 'layout/base.html' %}
+{%block title%}Trang chu{%endblock%}
+
+{%block content%}
+<div class="container">
+    <form action="/action_page.php">
+        <h2>Chọn file giấu tin</h2>
+        <div class="mb-3 mt-3">
+            <input type="file" class="form-control" id="file_text" value="Chọn file" name="email" accept=".docx, .pdf">
+        </div>
+        <h2>Chọn file tin cần giấu</h2>
+        <div class="mb-3 mt-3">
+            <input type="file" class="form-control" id="file_mess" value="Chọn file" name="email" accept=".docx, .pdf">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{%endblock%}

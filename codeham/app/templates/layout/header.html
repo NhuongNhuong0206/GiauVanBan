@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">logo</a>
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            {%for cn in chuc_nang%}
+            <li class="nav-item">
+                <a class="nav-link active" href="#">{{cn.name}}</a>
+            </li>
+            {%endfor%}
+        </ul>
+    </div>
+    <button type="button" class="btn btn-outline-danger">Dark</button>
+</nav>
+
+
